@@ -1,9 +1,12 @@
+var nombre = document.getElementById('nombre')
+var apellidos = document.getElementById('apellidos')
+
 function correcto() {
-    document.getElementById("nombre").style.color = "green";
-    document.getElementById("apellidos").style.color = "green";
+    nombre.style.color = 'green'
+    apellidos.style.color = 'green'
 }
 
 function incorrecto() {
-    document.getElementById("nombre").style.color = "red";
-    document.getElementById("apellidos").style.color = "red";
+    nombre.style.color = 'red'
+    apellidos.style.color ='red'
 }

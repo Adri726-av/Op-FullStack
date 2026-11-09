@@ -1,15 +1,26 @@
-var titulo = document.getElementsByTagName("title")[0].innerHTML;
-console.log(titulo.toUpperCase());
+var titulo = document.title
 
-var inputNombre = document.getElementById("nombre");
-var inputApellido = document.getElementById("apellido");
-inputNombre.value = "Adrian";
-inputApellido.value = "León";
+// Mostrar por consola el titulo
 
-var saludo = document.getElementById("saludo");
-saludo.innerText = "Hola " + inputNombre.value + " " + inputApellido.value;
+console.log("El titulo del documento: " + titulo)
 
-document.write("<p>¿Qué tal estás?</p>");
+// Cambiar el nombre a los input, indicando mi nombre y mi primer apellido
 
-var etiquetaApellido = document.querySelector("label[for='apellido']");
-etiquetaApellido.innerText = "Apellidos:";
+var inputNombre = document.getElementById('nombre')
+var inputAp = document.getElementById('apellido')
+
+inputNombre.value = 'Adrian'
+inputAp.value = 'Leon'
+
+// Añadir un texto a la etiqueta p saludando. Por ejemplo: Hola Francisco Alarcon
+
+document.getElementById('saludo').innerText = "Hola " + inputNombre.value + " " + inputAp.value
+
+// Añade una etiqueta p justo debajo de la etiqueta id saludo con el texto "¿Que tal estas?"
+
+document.write("<p>¿Qué tal estas?</p>")
+
+// Cambiar el texto de label
+
+var label = document.querySelector("label[for='apellido']")
+label.textContent = "Apellidos"
