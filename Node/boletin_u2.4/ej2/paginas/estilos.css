@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+nav {
+  background-color: #551a3a; 
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1 {
+  color: #551a3a;
+}
